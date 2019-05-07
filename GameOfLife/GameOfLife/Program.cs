@@ -23,11 +23,15 @@ namespace GameOfLife
             grid[7, 8] = true;
             grid[9, 9] = true;
             Print2DGrid(grid);
+            
         }
 
         private static void Print2DGrid(bool[,] grid)
         {
+            System.Threading.Thread.Sleep(2000);
+            Console.Clear();
             for (int y = 0; y < 10; y++)
+
             {
                 for (int x = 0; x < 10; x++)
                 {
