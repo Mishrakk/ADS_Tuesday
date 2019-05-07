@@ -32,6 +32,27 @@ namespace GameOfLife
                 Console.WriteLine();
                 
             }
+            grid[1, 1] = true;
+            grid[1, 2] = true;
+            grid[1, 3] = true;
+            grid[7,8 ] = true;
+            grid[9, 9] = true;
+            for (int y = 0; y < 10; y++)
+            {
+                for (int x = 0; x < 10; x++)
+                {
+                    if (grid[x, y] == true)
+                    {
+                        Console.Write("L");
+                    }
+                    else
+                    {
+                        Console.Write("D");
+                    }
+                }
+                Console.WriteLine();
+
+            }
         }
     }
 }
