@@ -15,16 +15,22 @@ namespace GameOfLife
         static void Main(string[] args)
 
         {
-            bool[,] grid = new bool[10, 10];
+            bool[,] grid = new bool[10, 10];//false - cell is dead, true - cell is alive
             for (int y = 0; y <10; y++)
             {
                 for (int x = 0; x < 10; x++)
                 {
-                    Console.Write(grid[x, y]);
-
+                    if (grid[x, y] == true)
+                    {
+                        Console.Write("L");         
+                    }
+                    else
+                    {
+                        Console.Write("D");
+                    }
                 }
                 Console.WriteLine();
-
+                
             }
         }
     }
