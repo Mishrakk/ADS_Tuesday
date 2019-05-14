@@ -39,6 +39,34 @@ namespace GameOfLife
                     {
                         livingNeighbours++;
                     }
+                    if (grid[x, y - 1] == true)
+                    {
+                        livingNeighbours++;
+                    }
+                    if (grid[x + 1, y - 1] == true)
+                    {
+                        livingNeighbours++;
+                    }
+                    if (grid[x - 1, y] == true)
+                    {
+                        livingNeighbours++;
+                    }
+                    if (grid[x + 1, y] == true)
+                    {
+                        livingNeighbours++;
+                    }
+                    if (grid[x - 1, y + 1] == true)
+                    {
+                        livingNeighbours++;
+                    }
+                    if (grid[x, y + 1] == true)
+                    {
+                        livingNeighbours++;
+                    }
+                    if (grid[x + 1, y + 1] == true)
+                    {
+                        livingNeighbours++;
+                    }
                 }
             }
             return newGrid;
