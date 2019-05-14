@@ -23,8 +23,12 @@ namespace GameOfLife
             grid[7, 8] = true;
             grid[9, 9] = true;
             Print2DGrid(grid);
-            grid = GenerateState(grid);
-            Print2DGrid(grid);
+            while (true)
+            {
+                grid = GenerateState(grid);
+                Print2DGrid(grid);
+            } 
+           
             
         }
         public static bool[,] GenerateState(bool[,] grid)
