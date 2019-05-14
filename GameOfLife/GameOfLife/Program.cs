@@ -35,35 +35,35 @@ namespace GameOfLife
                 for (int x = 0; x < 10; x++)
                 {
                     int livingNeighbours = 0;
-                    if (grid[x - 1, y - 1] == true)
+                    if (grid[(x-1+10)%10, (y-1+10)%10] == true)
                     {
                         livingNeighbours++;
                     }
-                    if (grid[x, y - 1] == true)
+                    if (grid[x, (y-1+10)%10] == true)
                     {
                         livingNeighbours++;
                     }
-                    if (grid[x + 1, y - 1] == true)
+                    if (grid[(x+1)%10, (y-1+10)%10] == true)
                     {
                         livingNeighbours++;
                     }
-                    if (grid[x - 1, y] == true)
+                    if (grid[(x-1+10)%10, y] == true)
                     {
                         livingNeighbours++;
                     }
-                    if (grid[x + 1, y] == true)
+                    if (grid[(x+1)%10, y] == true)
                     {
                         livingNeighbours++;
                     }
-                    if (grid[x - 1, y + 1] == true)
+                    if (grid[(x-1+10)%10, (y+1)%10] == true)
                     {
                         livingNeighbours++;
                     }
-                    if (grid[x, y + 1] == true)
+                    if (grid[x, (y+1)%10] == true)
                     {
                         livingNeighbours++;
                     }
-                    if (grid[x + 1, y + 1] == true)
+                    if (grid[(x+1)%10, (y+1)%10] == true)
                     {
                         livingNeighbours++;
                     }
