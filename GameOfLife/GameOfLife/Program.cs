@@ -67,6 +67,13 @@ namespace GameOfLife
                     {
                         livingNeighbours++;
                     }
+                    if (grid [x,y]==true)
+                    {
+                        if(livingNeighbours==2 || livingNeighbours == 3)
+                        {
+                            newGrid[x, y] = true;
+                        }
+                    }
                 }
             }
             return newGrid;
