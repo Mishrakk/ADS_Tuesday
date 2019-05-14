@@ -20,6 +20,11 @@ namespace GameOfLife
             grid[1, 1] = true;
             grid[1, 2] = true;
             grid[1, 3] = true;
+            grid[5, 5] = true;
+            grid[6, 5] = true;
+            grid[7, 5] = true;
+            grid[7, 4] = true;
+            grid[6, 3] = true;
             grid[7, 8] = true;
             grid[9, 9] = true;
             Print2DGrid(grid);
