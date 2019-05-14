@@ -30,6 +30,17 @@ namespace GameOfLife
         public static bool[,] GenerateState(bool[,] grid)
         {
             bool[,] newGrid = new bool[10,10];
+            for (int y = 0; y < 10; y++)
+            {
+                for (int x = 0; x < 10; x++)
+                {
+                    int livingNeighbours = 0;
+                    if (grid[x - 1, y - 1] == true)
+                    {
+                        livingNeighbours++;
+                    }
+                }
+            }
             return newGrid;
         }
 
