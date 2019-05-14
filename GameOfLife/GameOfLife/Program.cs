@@ -23,7 +23,14 @@ namespace GameOfLife
             grid[7, 8] = true;
             grid[9, 9] = true;
             Print2DGrid(grid);
+            grid = GenerateState(grid);
+            Print2DGrid(grid);
             
+        }
+        public static bool[,] GenerateState(bool[,] grid)
+        {
+            bool[,] newGrid = new bool[10,10];
+            return newGrid;
         }
 
         private static void Print2DGrid(bool[,] grid)
@@ -31,7 +38,6 @@ namespace GameOfLife
             System.Threading.Thread.Sleep(2000);
             Console.Clear();
             for (int y = 0; y < 10; y++)
-
             {
                 for (int x = 0; x < 10; x++)
                 {
@@ -45,7 +51,6 @@ namespace GameOfLife
                     }
                 }
                 Console.WriteLine();
-
             }
         }
     }
