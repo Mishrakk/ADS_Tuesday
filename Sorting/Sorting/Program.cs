@@ -6,7 +6,8 @@ namespace Sorting
     {
         static void Main(string[] args)
         {
-
+            int[] numbers = { 3, 7, 1, 5, 9 };
+            Console.WriteLine("array before sorting");
         }
     }
 }
