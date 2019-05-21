@@ -8,10 +8,14 @@ namespace Sorting
         {
             int[] numbers = { 3, 7, 1, 5, 9 };
             Console.WriteLine("array before sorting");
-            printarray(numbers);
-            
+            PrintArray(numbers);
+            Console.WriteLine("array after sorting");
+            InsertionSort(numbers);
+            PrintArray(numbers);
+           
         }
-        public static void printarray (int[] array)
+
+        public static void PrintArray (int[] array)
         {
             for (int i = 0; i < array.Length; i++)
             {
@@ -19,5 +23,10 @@ namespace Sorting
             }
             Console.WriteLine();
         }
+        public static void InsertionSort(int[] array)
+        {
+
+        }
     }
 }
+
