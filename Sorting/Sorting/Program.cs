@@ -10,8 +10,9 @@ namespace Sorting
             Console.WriteLine("array before sorting");
             for (int i = 0; i < numbers.Length; i++)
             {
-                Console.WriteLine(numbers[i]);
+                Console.Write(numbers[i] +" ");
             }
+            Console.WriteLine();
         }
     }
 }
