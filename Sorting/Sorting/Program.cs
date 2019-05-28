@@ -39,6 +39,10 @@ namespace Sorting
         }
         public static void CocktailSort (int[] array)
         {
+            bool swapped = true;
+            int start = 0;
+            int end = array.Length;
+
 
 
 
