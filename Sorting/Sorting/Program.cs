@@ -37,6 +37,12 @@ namespace Sorting
                 }
             }
         }
+        public static void CocktailSort (int[] array)
+        {
+
+
+
+        }
     }
 }
 
