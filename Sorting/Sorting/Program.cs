@@ -56,6 +56,17 @@ namespace Sorting
                     }
                 }
                 end--;
+                for (int i = end; i > start; i--)
+                {
+                    if (array[i-1] > array[i])
+                    {
+                        int temp = array[i-1];
+                        array[i-1] = array[i];
+                        array[i] = temp;
+                        swapped = true;
+                    }
+                }
+                start++;
             }
         }
     }
