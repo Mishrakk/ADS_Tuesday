@@ -26,11 +26,21 @@ namespace Sorting
         }
         public static void Quicksort(int[] array)
         {
-            Quicksortinternal(array, 0, array.Length - 1);
+            QuicksortInternal(array, 0, array.Length - 1);
         }
-        public static void Quicksortinternal(int[] array, int p, int r)
+        public static int Partition(int[] array, int p, int r)
+        {
+            return 0;
+        }
+        public static void QuicksortInternal(int[] array, int p, int r)
         {
 
+            if (p < r)
+            {
+                int pivot=Partition(array,p,r);
+                QuicksortInternal(array, p, pivot);
+                QuicksortInternal(array, pivot + 1, r);
+            }
         }
         public static void PrintArray (int[] array)
         {
