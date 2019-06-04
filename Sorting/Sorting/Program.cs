@@ -6,7 +6,7 @@ namespace Sorting
     {
         static void Main(string[] args)
         {
-            int[] numbers = { 3, 7, 1, 5, 9 };
+            int[] numbers = GenerateRandomArray(10);
             Console.WriteLine("array before sorting");
             PrintArray(numbers);
             Console.WriteLine("array after sorting");
@@ -16,7 +16,12 @@ namespace Sorting
         }
         public static int[] GenerateRandomArray(int size)
         {
+            Random random = new Random();
             int[] array = new int[size];
+            for (int i = 0; i < size; i++)
+            {
+                array[i] = random.Next();
+            }
             return array;
         }
         public static void PrintArray (int[] array)
