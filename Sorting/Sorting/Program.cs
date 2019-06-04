@@ -12,7 +12,7 @@ namespace Sorting
             Console.WriteLine("array after sorting");
             CocktailSort(numbers);
             PrintArray(numbers);
-           
+
         }
         public static int[] GenerateRandomArray(int size)
         {
@@ -20,9 +20,13 @@ namespace Sorting
             int[] array = new int[size];
             for (int i = 0; i < size; i++)
             {
-                array[i] = random.Next();
+                array[i] = random.Next() % (10 * size);
             }
             return array;
+        }
+        public static void Quicksort(int[] array, int p, int r)
+        {
+
         }
         public static void PrintArray (int[] array)
         {
