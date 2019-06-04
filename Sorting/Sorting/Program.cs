@@ -10,11 +10,15 @@ namespace Sorting
             Console.WriteLine("array before sorting");
             PrintArray(numbers);
             Console.WriteLine("array after sorting");
-            InsertionSort(numbers);
+            CocktailSort(numbers);
             PrintArray(numbers);
            
         }
-
+        public static int[] GenerateRandomArray(int size)
+        {
+            int[] array = new int[size];
+            return array;
+        }
         public static void PrintArray (int[] array)
         {
             for (int i = 0; i < array.Length; i++)
