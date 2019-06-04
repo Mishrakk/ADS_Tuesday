@@ -10,7 +10,7 @@ namespace Sorting
             Console.WriteLine("array before sorting");
             PrintArray(numbers);
             Console.WriteLine("array after sorting");
-            CocktailSort(numbers);
+            Quicksort(numbers);
             PrintArray(numbers);
 
         }
@@ -24,7 +24,11 @@ namespace Sorting
             }
             return array;
         }
-        public static void Quicksort(int[] array, int p, int r)
+        public static void Quicksort(int[] array)
+        {
+            Quicksortinternal(array, 0, array.Length - 1);
+        }
+        public static void Quicksortinternal(int[] array, int p, int r)
         {
 
         }
