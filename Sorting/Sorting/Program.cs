@@ -31,7 +31,7 @@ namespace Sorting
         public static int Partition(int[] array, int p, int r)
         {
             int pivot = array[r];
-            int i = p - 1;          
+            int i = p - 1;
             for (int j = p; j < r - 1; j++)
             {
                 if (array[j] <= pivot)
@@ -42,7 +42,10 @@ namespace Sorting
                     array[j] = temp;
                 }
             }
-            return 0;
+            int temp2 = array[i + 1];
+            array[i + 1] = array[r];
+            array[r] = temp2;
+            return i + 1;
         }
         public static void QuicksortInternal(int[] array, int p, int r)
         {
