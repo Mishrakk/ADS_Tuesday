@@ -30,6 +30,12 @@ namespace Sorting
         }
         public static int Partition(int[] array, int p, int r)
         {
+            int pivot = array[r];
+            int i = p - 1;          
+            for (int j = p; j < r - 1; j++)
+            {
+
+            }
             return 0;
         }
         public static void QuicksortInternal(int[] array, int p, int r)
