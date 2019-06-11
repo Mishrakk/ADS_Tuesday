@@ -52,8 +52,8 @@ namespace Sorting
 
             if (p < r)
             {
-                int pivot=Partition(array,p,r);
-                QuicksortInternal(array, p, pivot);
+                int pivot=Partition(array, p, r);
+                QuicksortInternal(array, p, pivot-1);
                 QuicksortInternal(array, pivot + 1, r);
             }
         }
