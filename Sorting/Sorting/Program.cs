@@ -34,7 +34,13 @@ namespace Sorting
             int i = p - 1;          
             for (int j = p; j < r - 1; j++)
             {
-
+                if (array[j] <= pivot)
+                {
+                    i++;
+                    int temp = array[i];
+                    array[i] = array[j];
+                    array[j] = temp;
+                }
             }
             return 0;
         }
