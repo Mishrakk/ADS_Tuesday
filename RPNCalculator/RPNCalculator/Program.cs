@@ -20,7 +20,8 @@ namespace RPNCalculator
 
         public void Push(int newElement)
         {
-
+            array[count]= newElement;
+            count++;
         }
         public int Pop()
         {
