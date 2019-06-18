@@ -20,10 +20,20 @@ namespace RPNCalculator
                 {
                     stack.Push(result);
                 }
+                else
+                {
+                    int op2 = stack.Pop();
+                    int op1 = stack.Pop();
+
+                }
             }
 
             return stack.Pop();
 
+
+        }
+        public static int Evaluate(int op1, int op2, string op)
+        {
 
         }
     }
