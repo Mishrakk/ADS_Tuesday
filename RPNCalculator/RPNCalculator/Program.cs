@@ -6,7 +6,8 @@ namespace RPNCalculator
     {
         static void Main(string[] args)
         {
-            
+            string expression = "12 3 -";
+            Console.WriteLine(expression + " = " + PostfixEvaluator(expression));
         }
 
         public static int PostfixEvaluator(string expression)
@@ -24,8 +25,10 @@ namespace RPNCalculator
                 {
                     int op2 = stack.Pop();
                     int op1 = stack.Pop();
-
+                    int op3 = Evaluate(op1, op2, element);
+                    stack.Push(op3);
                 }
+            
             }
             return stack.Pop();
         }
