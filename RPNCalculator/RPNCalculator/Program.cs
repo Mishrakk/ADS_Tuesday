@@ -11,8 +11,12 @@ namespace RPNCalculator
 
         public static int PostfixEvaluator(string expression)
         {
-            Stack<int> stack = new Stack<int>(); 
-
+            Stack<int> stack = new Stack<int>();
+            string[] expressionArray = expression.Split(' ');
+            for (int i = 0; i < expressionArray.Length; i++)
+            {
+                string element = expressionArray[i];
+            }
 
             return stack.Pop();
 
