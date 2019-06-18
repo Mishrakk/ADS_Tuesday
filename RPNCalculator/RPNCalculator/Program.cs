@@ -8,5 +8,12 @@ namespace RPNCalculator
         {
             
         }
+
+        public static int PostfixEvaluator(string expression)
+        {
+            return 0;
+
+
+        }
     }
 }
