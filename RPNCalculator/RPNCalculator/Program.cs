@@ -11,7 +11,10 @@ namespace RPNCalculator
 
         public static int PostfixEvaluator(string expression)
         {
-            return 0;
+            Stack<int> stack = new Stack<int>(); 
+
+
+            return stack.Pop();
 
 
         }
