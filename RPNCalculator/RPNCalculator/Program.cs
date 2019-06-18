@@ -27,14 +27,19 @@ namespace RPNCalculator
 
                 }
             }
-
             return stack.Pop();
-
-
         }
+
         public static int Evaluate(int op1, int op2, string op)
         {
-
+            if (op == "+")
+            {
+                return op1 +op2;
+            }
+            else
+            {
+                return op1 - op2;
+            }
         }
     }
 }
