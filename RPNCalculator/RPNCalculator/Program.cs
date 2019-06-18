@@ -16,6 +16,10 @@ namespace RPNCalculator
             for (int i = 0; i < expressionArray.Length; i++)
             {
                 string element = expressionArray[i];
+                if (int.TryParse(element, out int result))
+                {
+                    stack.Push(result);
+                }
             }
 
             return stack.Pop();
